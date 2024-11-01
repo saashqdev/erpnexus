@@ -1,0 +1,18 @@
+{
+  "name": "erpnexus",
+  "description": "Open Source ERP System powered by the Saashq Framework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saashqdev/erpnexus.git"
+  },
+  "homepage": "https://erpnexus.com",
+  "author": "Saashq Technologies Pvt. Ltd.",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/saashqdev/erpnexus/issues"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "onscan.js": "^1.5.2"
+  }
+}

@@ -1,0 +1,55 @@
+accounts:
+- erpnexus/accounts/*
+- erpnexus/controllers/accounts_controller.py
+- erpnexus/controllers/taxes_and_totals.py
+
+stock:
+- erpnexus/stock/*
+- erpnexus/controllers/stock_controller.py
+- erpnexus/controllers/item_variant.py
+
+assets:
+- erpnexus/assets/*
+
+regional:
+- erpnexus/regional/*
+
+selling:
+- erpnexus/selling/*
+- erpnexus/controllers/selling_controller.py
+
+buying:
+- erpnexus/buying/*
+- erpnexus/controllers/buying_controller.py
+
+support:
+- erpnexus/support/*
+
+POS:
+- pos*
+
+ecommerce:
+- erpnexus/e_commerce/*
+
+maintenance:
+- erpnexus/maintenance/*
+
+manufacturing:
+- erpnexus/manufacturing/*
+
+crm:
+- erpnexus/crm/*
+
+HR:
+- erpnexus/hr/*
+
+payroll:
+- erpnexus/payroll*
+
+projects:
+- erpnexus/projects/*
+
+# Any python files modifed but no test files modified
+needs-tests:
+- any: ['erpnexus/**/*.py']
+  all: ['!erpnexus/**/test*.py']

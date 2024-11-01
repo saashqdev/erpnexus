@@ -1,0 +1,389 @@
+[pre_model_sync]
+erpnexus.patches.v12_0.update_is_cancelled_field
+erpnexus.patches.v11_0.rename_production_order_to_work_order
+erpnexus.patches.v13_0.add_bin_unique_constraint
+erpnexus.patches.v11_0.refactor_naming_series
+erpnexus.patches.v11_0.refactor_autoname_naming
+erpnexus.patches.v14_0.change_is_subcontracted_fieldtype
+execute:saashq.reload_doc("accounts", "doctype", "POS Payment Method") #2020-05-28
+erpnexus.patches.v4_2.update_requested_and_ordered_qty #2021-03-31
+erpnexus.patches.v5_7.update_item_description_based_on_item_master
+erpnexus.patches.v4_2.repost_reserved_qty #2021-03-31
+erpnexus.patches.v8_1.removed_roles_from_gst_report_non_indian_account #16-08-2018
+erpnexus.patches.v10_0.fichier_des_ecritures_comptables_for_france
+erpnexus.patches.v10_0.rename_price_to_rate_in_pricing_rule
+erpnexus.patches.v10_0.set_currency_in_pricing_rule
+erpnexus.patches.v10_0.update_translatable_fields
+execute:saashq.delete_doc('DocType', 'Production Planning Tool', ignore_missing=True)
+erpnexus.patches.v11_0.rename_duplicate_item_code_values
+erpnexus.patches.v11_0.make_quality_inspection_template
+erpnexus.patches.v11_0.merge_land_unit_with_location
+erpnexus.patches.v11_0.add_index_on_nestedset_doctypes
+erpnexus.patches.v11_0.remove_modules_setup_page
+erpnexus.patches.v11_0.update_department_lft_rgt
+erpnexus.patches.v11_0.uom_conversion_data #30-06-2018
+erpnexus.patches.v11_0.update_account_type_in_party_type
+erpnexus.patches.v11_0.rename_supplier_type_to_supplier_group
+erpnexus.patches.v10_1.transfer_subscription_to_auto_repeat
+erpnexus.patches.v11_0.update_brand_in_item_price
+erpnexus.patches.v11_0.create_default_success_action
+erpnexus.patches.v11_0.rebuild_tree_for_company
+erpnexus.patches.v11_0.create_department_records_for_each_company
+erpnexus.patches.v11_0.make_location_from_warehouse
+erpnexus.patches.v11_0.make_asset_finance_book_against_old_entries
+erpnexus.patches.v11_0.check_buying_selling_in_currency_exchange
+erpnexus.patches.v11_0.move_item_defaults_to_child_table_for_multicompany #02-07-2018 #19-06-2019
+erpnexus.patches.v11_0.rename_overproduction_percent_field
+erpnexus.patches.v11_0.update_backflush_subcontract_rm_based_on_bom
+erpnexus.patches.v11_0.rename_members_with_naming_series #04-06-2018
+erpnexus.patches.v11_0.set_update_field_and_value_in_workflow_state
+erpnexus.patches.v11_0.update_total_qty_field
+erpnexus.patches.v11_0.update_sales_partner_type
+erpnexus.patches.v11_0.rename_asset_adjustment_doctype
+erpnexus.patches.v11_0.set_user_permissions_for_department
+erpnexus.patches.v11_0.hr_ux_cleanups
+erpnexus.patches.v11_0.set_department_for_doctypes
+erpnexus.patches.v11_0.update_allow_transfer_for_manufacture
+erpnexus.patches.v11_0.add_item_group_defaults
+erpnexus.patches.v11_0.add_expense_claim_default_account
+erpnexus.patches.v11_0.make_job_card
+erpnexus.patches.v11_0.add_default_dispatch_notification_template
+erpnexus.patches.v11_0.add_market_segments
+erpnexus.patches.v11_0.add_sales_stages
+execute:saashq.delete_doc_if_exists("Page", "sales-analytics")
+execute:saashq.delete_doc_if_exists("Page", "purchase-analytics")
+execute:saashq.delete_doc_if_exists("Page", "stock-analytics")
+execute:saashq.delete_doc_if_exists("Page", "production-analytics")
+erpnexus.patches.v10_0.item_barcode_childtable_migrate # 16-02-2019
+erpnexus.patches.v11_0.update_delivery_trip_status
+erpnexus.patches.v11_0.rename_bom_wo_fields
+erpnexus.patches.v11_0.renamed_from_to_fields_in_project
+erpnexus.patches.v11_1.setup_guardian_role
+execute:saashq.delete_doc('DocType', 'Notification Control')
+erpnexus.patches.v11_0.remove_barcodes_field_from_copy_fields_to_variants
+erpnexus.patches.v12_0.set_task_status
+erpnexus.patches.v11_0.make_italian_localization_fields # 26-03-2019
+erpnexus.patches.v12_0.add_item_name_in_work_orders
+erpnexus.patches.v12_0.update_pricing_rule_fields
+erpnexus.patches.v11_1.make_job_card_time_logs
+erpnexus.patches.v12_0.rename_pricing_rule_child_doctypes
+erpnexus.patches.v12_0.move_target_distribution_from_parent_to_child
+erpnexus.patches.v12_0.stock_entry_enhancements
+erpnexus.patches.v10_0.item_barcode_childtable_migrate # 16-02-2019 #25-06-2019
+erpnexus.patches.v12_0.make_item_manufacturer
+erpnexus.patches.v12_0.move_item_tax_to_item_tax_template
+erpnexus.patches.v11_1.set_variant_based_on
+erpnexus.patches.v11_1.woocommerce_set_creation_user
+erpnexus.patches.v11_1.rename_depends_on_lwp
+execute:saashq.delete_doc("Report", "Inactive Items")
+erpnexus.patches.v11_1.delete_scheduling_tool
+erpnexus.patches.v12_0.rename_tolerance_fields
+execute:saashq.delete_doc_if_exists("Page", "support-analytics")
+erpnexus.patches.v12_0.remove_patient_medical_record_page
+erpnexus.patches.v11_1.move_customer_lead_to_dynamic_column
+erpnexus.patches.v11_1.set_default_action_for_quality_inspection
+erpnexus.patches.v11_1.delete_bom_browser
+erpnexus.patches.v11_1.set_missing_title_for_quotation
+erpnexus.patches.v11_1.update_bank_transaction_status
+erpnexus.patches.v11_1.renamed_delayed_item_report
+erpnexus.patches.v11_1.set_missing_opportunity_from
+erpnexus.patches.v12_0.set_quotation_status
+erpnexus.patches.v12_0.set_priority_for_support
+erpnexus.patches.v12_0.delete_priority_property_setter
+erpnexus.patches.v12_0.set_default_batch_size
+execute:saashq.delete_doc("DocType", "Project Task")
+erpnexus.patches.v11_1.update_default_supplier_in_item_defaults
+erpnexus.patches.v12_0.update_due_date_in_gle
+erpnexus.patches.v12_0.add_default_buying_selling_terms_in_company
+erpnexus.patches.v12_0.create_accounting_dimensions_in_missing_doctypes #2020-05-11
+erpnexus.patches.v11_1.set_status_for_material_request_type_manufacture
+erpnexus.patches.v12_0.move_plaid_settings_to_doctype
+execute:saashq.reload_doc('desk', 'doctype', 'dashboard_chart_link')
+execute:saashq.reload_doc('desk', 'doctype', 'dashboard')
+execute:saashq.reload_doc('desk', 'doctype', 'dashboard_chart_source')
+execute:saashq.reload_doc('desk', 'doctype', 'dashboard_chart')
+execute:saashq.reload_doc('desk', 'doctype', 'dashboard_chart_field')
+erpnexus.patches.v12_0.remove_bank_remittance_custom_fields
+erpnexus.patches.v12_0.move_credit_limit_to_customer_credit_limit
+erpnexus.patches.v12_0.add_variant_of_in_item_attribute_table
+erpnexus.patches.v12_0.rename_bank_account_field_in_journal_entry_account
+erpnexus.patches.v12_0.create_default_energy_point_rules
+erpnexus.patches.v12_0.set_produced_qty_field_in_sales_order_for_work_order
+erpnexus.patches.v12_0.set_cwip_and_delete_asset_settings
+erpnexus.patches.v12_0.set_expense_account_in_landed_cost_voucher_taxes
+erpnexus.patches.v12_0.replace_accounting_with_accounts_in_home_settings
+erpnexus.patches.v12_0.set_automatically_process_deferred_accounting_in_accounts_settings
+erpnexus.patches.v12_0.set_payment_entry_status
+erpnexus.patches.v12_0.update_owner_fields_in_acc_dimension_custom_fields
+erpnexus.patches.v12_0.update_price_or_product_discount
+erpnexus.patches.v12_0.set_production_capacity_in_workstation
+erpnexus.patches.v12_0.set_employee_preferred_emails
+erpnexus.patches.v12_0.set_against_blanket_order_in_sales_and_purchase_order
+erpnexus.patches.v12_0.set_cost_center_in_child_table_of_expense_claim
+erpnexus.patches.v12_0.set_lead_title_field
+erpnexus.patches.v12_0.set_permission_einvoicing
+erpnexus.patches.v12_0.create_irs_1099_field_united_states
+erpnexus.patches.v12_0.move_bank_account_swift_number_to_bank
+erpnexus.patches.v12_0.rename_bank_reconciliation
+erpnexus.patches.v12_0.rename_bank_reconciliation_fields # 2020-01-22
+erpnexus.patches.v12_0.set_purchase_receipt_delivery_note_detail
+erpnexus.patches.v12_0.add_permission_in_lower_deduction
+erpnexus.patches.v12_0.set_received_qty_in_material_request_as_per_stock_uom
+erpnexus.patches.v12_0.rename_account_type_doctype
+erpnexus.patches.v12_0.recalculate_requested_qty_in_bin
+erpnexus.patches.v12_0.set_total_batch_quantity
+erpnexus.patches.v12_0.rename_mws_settings_fields
+erpnexus.patches.v12_0.set_updated_purpose_in_pick_list
+erpnexus.patches.v12_0.repost_stock_ledger_entries_for_target_warehouse
+erpnexus.patches.v12_0.update_end_date_and_status_in_email_campaign
+erpnexus.patches.v12_0.fix_quotation_expired_status
+erpnexus.patches.v12_0.rename_pos_closing_doctype
+erpnexus.patches.v13_0.replace_pos_payment_mode_table #2020-12-29
+execute:saashq.delete_doc_if_exists("Page", "appointment-analytic")
+execute:saashq.rename_doc("Desk Page", "Getting Started", "Home", force=True)
+erpnexus.patches.v12_0.unset_customer_supplier_based_on_type_of_item_price
+erpnexus.patches.v12_0.set_valid_till_date_in_supplier_quotation
+erpnexus.patches.v12_0.set_serial_no_status #2020-05-21
+erpnexus.patches.v12_0.update_price_list_currency_in_bom
+execute:saashq.reload_doctype('Dashboard')
+execute:saashq.reload_doc('desk', 'doctype', 'number_card_link')
+execute:saashq.delete_doc_if_exists('Dashboard', 'Accounts')
+erpnexus.patches.v13_0.update_actual_start_and_end_date_in_wo
+erpnexus.patches.v12_0.update_bom_in_so_mr
+execute:saashq.delete_doc("Report", "Department Analytics")
+erpnexus.patches.v12_0.update_uom_conversion_factor
+erpnexus.patches.v13_0.replace_pos_page_with_point_of_sale_page
+erpnexus.patches.v13_0.delete_old_purchase_reports
+erpnexus.patches.v12_0.set_italian_import_supplier_invoice_permissions
+erpnexus.patches.v13_0.update_subscription
+erpnexus.patches.v12_0.unhide_cost_center_field
+erpnexus.patches.v13_0.update_sla_enhancements
+erpnexus.patches.v13_0.update_deferred_settings
+erpnexus.patches.v12_0.set_multi_uom_in_rfq
+erpnexus.patches.v13_0.delete_old_sales_reports
+execute:saashq.delete_doc_if_exists("DocType", "Bank Reconciliation")
+execute:saashq.reload_doc("regional", "doctype", "e_invoice_settings")
+erpnexus.patches.v13_0.loyalty_points_entry_for_pos_invoice #22-07-2020
+erpnexus.patches.v12_0.fix_percent_complete_for_projects
+erpnexus.patches.v13_0.delete_report_requested_items_to_order
+erpnexus.patches.v12_0.update_item_tax_template_company
+erpnexus.patches.v13_0.move_branch_code_to_bank_account
+erpnexus.patches.v13_0.add_standard_navbar_items #2021-03-24
+erpnexus.patches.v13_0.stock_entry_enhancements
+erpnexus.patches.v12_0.rename_lost_reason_detail
+erpnexus.patches.v13_0.drop_razorpay_payload_column
+erpnexus.patches.v13_0.rename_issue_doctype_fields
+erpnexus.patches.v13_0.change_default_pos_print_format
+erpnexus.patches.v13_0.set_youtube_video_id
+erpnexus.patches.v13_0.set_app_name
+erpnexus.patches.v13_0.print_uom_after_quantity_patch
+erpnexus.patches.v13_0.set_payment_channel_in_payment_gateway_account
+execute:saashq.delete_doc("Report", "Quoted Item Comparison")
+erpnexus.patches.v13_0.update_member_email_address
+erpnexus.patches.v13_0.update_pos_closing_entry_in_merge_log
+erpnexus.patches.v13_0.add_po_to_global_search
+erpnexus.patches.v13_0.update_returned_qty_in_pr_dn
+erpnexus.patches.v13_0.create_uae_pos_invoice_fields
+erpnexus.patches.v13_0.update_project_template_tasks
+erpnexus.patches.v13_0.convert_qi_parameter_to_link_field
+erpnexus.patches.v13_0.add_naming_series_to_old_projects # 1-02-2021
+erpnexus.patches.v13_0.update_payment_terms_outstanding
+erpnexus.patches.v13_0.delete_old_bank_reconciliation_doctypes
+erpnexus.patches.v13_0.update_vehicle_no_reqd_condition
+erpnexus.patches.v13_0.rename_membership_settings_to_non_profit_settings
+erpnexus.patches.v13_0.setup_uae_vat_fields
+execute:saashq.db.set_value('System Settings', None, 'app_name', 'ERPNexus')
+erpnexus.patches.v12_0.purchase_receipt_status
+erpnexus.patches.v13_0.fix_non_unique_represents_company
+erpnexus.patches.v12_0.add_document_type_field_for_italy_einvoicing
+erpnexus.patches.v13_0.update_shipment_status
+erpnexus.patches.v13_0.remove_attribute_field_from_item_variant_setting
+erpnexus.patches.v13_0.set_pos_closing_as_failed
+erpnexus.patches.v13_0.update_timesheet_changes
+erpnexus.patches.v13_0.add_doctype_to_sla #14-06-2021
+erpnexus.patches.v13_0.bill_for_rejected_quantity_in_purchase_invoice
+erpnexus.patches.v13_0.rename_issue_status_hold_to_on_hold
+erpnexus.patches.v13_0.update_response_by_variance
+erpnexus.patches.v13_0.update_job_card_details
+erpnexus.patches.v13_0.add_missing_fg_item_for_stock_entry
+erpnexus.patches.v13_0.update_subscription_status_in_memberships
+erpnexus.patches.v13_0.update_amt_in_work_order_required_items
+erpnexus.patches.v13_0.delete_orphaned_tables
+erpnexus.patches.v13_0.update_tds_check_field #3
+erpnexus.patches.v13_0.add_custom_field_for_south_africa #2
+erpnexus.patches.v13_0.update_recipient_email_digest
+erpnexus.patches.v13_0.shopify_deprecation_warning
+erpnexus.patches.v13_0.remove_bad_selling_defaults
+erpnexus.patches.v13_0.trim_whitespace_from_serial_nos  # 16-01-2022
+erpnexus.patches.v13_0.migrate_stripe_api
+erpnexus.patches.v13_0.reset_clearance_date_for_intracompany_payment_entries
+execute:saashq.reload_doc("erpnexus_integrations", "doctype", "TaxJar Settings")
+execute:saashq.reload_doc("erpnexus_integrations", "doctype", "Product Tax Category")
+erpnexus.patches.v13_0.set_operation_time_based_on_operating_cost
+erpnexus.patches.v13_0.create_gst_payment_entry_fields #27-11-2021
+erpnexus.patches.v13_0.fix_invoice_statuses
+erpnexus.patches.v13_0.replace_supplier_item_group_with_party_specific_item
+erpnexus.patches.v13_0.update_dates_in_tax_withholding_category
+erpnexus.patches.v14_0.update_opportunity_currency_fields
+erpnexus.patches.v13_0.create_accounting_dimensions_in_pos_doctypes
+erpnexus.patches.v13_0.create_custom_field_for_finance_book
+erpnexus.patches.v13_0.modify_invalid_gain_loss_gl_entries #2
+erpnexus.patches.v13_0.fix_additional_cost_in_mfg_stock_entry
+erpnexus.patches.v13_0.set_status_in_maintenance_schedule_table
+erpnexus.patches.v13_0.enable_scheduler_job_for_item_reposting
+erpnexus.patches.v13_0.requeue_failed_reposts
+erpnexus.patches.v13_0.update_job_card_status
+erpnexus.patches.v13_0.enable_uoms
+erpnexus.patches.v12_0.update_production_plan_status
+erpnexus.patches.v13_0.healthcare_deprecation_warning
+erpnexus.patches.v13_0.item_naming_series_not_mandatory
+erpnexus.patches.v13_0.update_category_in_ltds_certificate
+erpnexus.patches.v13_0.update_maintenance_schedule_field_in_visit
+erpnexus.patches.v14_0.migrate_crm_settings
+erpnexus.patches.v13_0.wipe_serial_no_field_for_0_qty
+erpnexus.patches.v13_0.agriculture_deprecation_warning
+erpnexus.patches.v13_0.hospitality_deprecation_warning
+erpnexus.patches.v13_0.update_asset_quantity_field
+erpnexus.patches.v13_0.delete_bank_reconciliation_detail
+erpnexus.patches.v13_0.enable_provisional_accounting
+erpnexus.patches.v13_0.non_profit_deprecation_warning
+erpnexus.patches.v13_0.show_india_localisation_deprecation_warning
+erpnexus.patches.v13_0.show_hr_payroll_deprecation_warning
+erpnexus.patches.v13_0.reset_corrupt_defaults
+erpnexus.patches.v13_0.create_accounting_dimensions_for_asset_repair
+erpnexus.patches.v15_0.delete_taxjar_doctypes
+erpnexus.patches.v15_0.delete_ecommerce_doctypes
+erpnexus.patches.v14_0.update_reference_due_date_in_journal_entry
+erpnexus.patches.v15_0.saudi_depreciation_warning
+erpnexus.patches.v15_0.delete_saudi_doctypes
+erpnexus.patches.v14_0.show_loan_management_deprecation_warning
+erpnexus.patches.v14_0.clear_reconciliation_values_from_singles
+execute:saashq.rename_doc("Report", "TDS Payable Monthly", "Tax Withholding Details", force=True)
+erpnexus.patches.v14_0.update_proprietorship_to_individual
+
+[post_model_sync]
+erpnexus.patches.v15_0.create_asset_depreciation_schedules_from_assets
+execute:saashq.delete_doc_if_exists('Workspace', 'ERPNexus Integrations Settings')
+erpnexus.patches.v14_0.update_posting_datetime_and_dropped_indexes #22-02-2024
+erpnexus.patches.v14_0.rename_ongoing_status_in_sla_documents
+erpnexus.patches.v14_0.delete_shopify_doctypes
+erpnexus.patches.v14_0.delete_healthcare_doctypes
+erpnexus.patches.v14_0.delete_hub_doctypes
+erpnexus.patches.v14_0.delete_hospitality_doctypes # 20-01-2022
+erpnexus.patches.v14_0.delete_agriculture_doctypes # 15-06-2022
+erpnexus.patches.v14_0.delete_education_doctypes
+erpnexus.patches.v14_0.delete_datev_doctypes
+erpnexus.patches.v14_0.rearrange_company_fields
+erpnexus.patches.v13_0.update_sane_transfer_against
+erpnexus.patches.v14_0.migrate_cost_center_allocations
+erpnexus.patches.v13_0.update_reserved_qty_closed_wo
+erpnexus.patches.v13_0.update_exchange_rate_settings
+erpnexus.patches.v14_0.delete_amazon_mws_doctype
+erpnexus.patches.v13_0.set_work_order_qty_in_so_from_mr
+erpnexus.patches.v13_0.item_reposting_for_incorrect_sl_and_gl
+erpnexus.patches.v14_0.update_batch_valuation_flag
+erpnexus.patches.v14_0.delete_non_profit_doctypes
+erpnexus.patches.v13_0.set_return_against_in_pos_invoice_references
+erpnexus.patches.v13_0.remove_unknown_links_to_prod_plan_items # 24-03-2022
+erpnexus.patches.v13_0.change_default_item_manufacturer_fieldtype
+erpnexus.patches.v13_0.requeue_recoverable_reposts
+erpnexus.patches.v14_0.discount_accounting_separation
+erpnexus.patches.v13_0.create_accounting_dimensions_in_orders
+erpnexus.patches.v13_0.set_per_billed_in_return_delivery_note
+execute:saashq.delete_doc("DocType", "Naming Series")
+erpnexus.patches.v13_0.job_card_status_on_hold
+erpnexus.patches.v14_0.copy_is_subcontracted_value_to_is_old_subcontracting_flow
+erpnexus.patches.v14_0.crm_ux_cleanup
+erpnexus.patches.v14_0.migrate_existing_lead_notes_as_per_the_new_format
+erpnexus.patches.v14_0.remove_india_localisation # 14-07-2022
+erpnexus.patches.v13_0.fix_number_and_frequency_for_monthly_depreciation
+erpnexus.patches.v14_0.remove_hr_and_payroll_modules # 20-07-2022
+erpnexus.patches.v14_0.fix_crm_no_of_employees
+erpnexus.patches.v14_0.create_accounting_dimensions_in_subcontracting_doctypes
+erpnexus.patches.v14_0.fix_subcontracting_receipt_gl_entries
+erpnexus.patches.v13_0.drop_unused_sle_index_parts
+erpnexus.patches.v14_0.create_accounting_dimensions_for_asset_capitalization
+erpnexus.patches.v14_0.update_partial_tds_fields
+erpnexus.patches.v14_0.create_incoterms_and_migrate_shipment
+erpnexus.patches.v14_0.create_accounting_dimensions_for_payment_request
+erpnexus.patches.v14_0.update_entry_type_for_journal_entry
+erpnexus.patches.v14_0.change_autoname_for_tax_withheld_vouchers
+erpnexus.patches.v14_0.set_pick_list_status
+erpnexus.patches.v13_0.update_docs_link
+erpnexus.patches.v15_0.update_asset_value_for_manual_depr_entries
+erpnexus.patches.v15_0.update_gpa_and_ndb_for_assdeprsch
+erpnexus.patches.v14_0.create_accounting_dimensions_for_closing_balance
+erpnexus.patches.v14_0.set_period_start_end_date_in_pcv
+erpnexus.patches.v14_0.update_closing_balances #29-10-2024
+execute:saashq.db.set_single_value("Accounts Settings", "merge_similar_account_heads", 0)
+erpnexus.patches.v14_0.update_reference_type_in_journal_entry_accounts
+erpnexus.patches.v14_0.update_subscription_details
+execute:saashq.delete_doc("Report", "Tax Detail", force=True)
+erpnexus.patches.v15_0.enable_all_leads
+erpnexus.patches.v14_0.update_company_in_ldc
+erpnexus.patches.v14_0.set_packed_qty_in_draft_delivery_notes
+execute:saashq.delete_doc('DocType', 'Cash Flow Mapping Template Details', ignore_missing=True)
+execute:saashq.delete_doc('DocType', 'Cash Flow Mapping', ignore_missing=True)
+execute:saashq.delete_doc('DocType', 'Cash Flow Mapper', ignore_missing=True)
+execute:saashq.delete_doc('DocType', 'Cash Flow Mapping Template', ignore_missing=True)
+execute:saashq.delete_doc('DocType', 'Cash Flow Mapping Accounts', ignore_missing=True)
+erpnexus.patches.v14_0.cleanup_workspaces
+erpnexus.patches.v15_0.remove_loan_management_module #2023-07-03
+erpnexus.patches.v14_0.set_report_in_process_SOA
+erpnexus.buying.doctype.supplier.patches.migrate_supplier_portal_users
+execute:saashq.defaults.clear_default("fiscal_year")
+erpnexus.patches.v15_0.remove_exotel_integration
+erpnexus.patches.v14_0.single_to_multi_dunning
+execute:saashq.db.set_single_value('Selling Settings', 'allow_negative_rates_for_items', 0)
+erpnexus.patches.v15_0.correct_asset_value_if_je_with_workflow
+erpnexus.patches.v15_0.delete_woocommerce_settings_doctype
+erpnexus.patches.v14_0.migrate_deferred_accounts_to_item_defaults
+erpnexus.patches.v14_0.update_invoicing_period_in_subscription
+execute:saashq.delete_doc("Page", "welcome-to-erpnexus")
+erpnexus.patches.v15_0.migrate_payment_request_status
+erpnexus.patches.v15_0.delete_payment_gateway_doctypes
+erpnexus.patches.v14_0.create_accounting_dimensions_in_sales_order_item
+erpnexus.patches.v15_0.update_sre_from_voucher_details
+erpnexus.patches.v14_0.rename_over_order_allowance_field
+erpnexus.patches.v14_0.migrate_delivery_stop_lock_field
+erpnexus.patches.v14_0.add_default_for_repost_settings
+erpnexus.patches.v15_0.rename_daily_depreciation_to_depreciation_amount_based_on_num_days_in_month
+erpnexus.patches.v15_0.rename_depreciation_amount_based_on_num_days_in_month_to_daily_prorata_based
+erpnexus.patches.v15_0.set_reserved_stock_in_bin
+erpnexus.patches.v14_0.create_accounting_dimensions_in_supplier_quotation
+erpnexus.patches.v14_0.update_zero_asset_quantity_field
+execute:saashq.db.set_single_value("Buying Settings", "project_update_frequency", "Each Transaction")
+execute:saashq.db.set_default("date_format", saashq.db.get_single_value("System Settings", "date_format"))
+erpnexus.patches.v14_0.update_total_asset_cost_field
+erpnexus.patches.v15_0.create_advance_payment_status
+erpnexus.patches.v15_0.allow_on_submit_dimensions_for_repostable_doctypes
+erpnexus.patches.v14_0.create_accounting_dimensions_in_reconciliation_tool
+erpnexus.patches.v14_0.update_flag_for_return_invoices #2024-03-22
+erpnexus.patches.v15_0.create_accounting_dimensions_in_payment_request
+erpnexus.patches.v14_0.update_pos_return_ledger_entries #2024-08-16
+erpnexus.patches.v15_0.create_advance_payment_ledger_records
+# below migration patch should always run last
+erpnexus.patches.v14_0.migrate_gl_to_payment_ledger
+erpnexus.stock.doctype.delivery_note.patches.drop_unused_return_against_index # 2023-12-20
+erpnexus.patches.v14_0.set_maintain_stock_for_bom_item
+erpnexus.patches.v15_0.delete_orphaned_asset_movement_item_records
+erpnexus.patches.v15_0.fix_debit_credit_in_transaction_currency
+erpnexus.patches.v15_0.rename_purchase_receipt_amount_to_purchase_amount
+erpnexus.patches.v14_0.enable_set_priority_for_pricing_rules #1
+erpnexus.patches.v15_0.rename_number_of_depreciations_booked_to_opening_booked_depreciations
+erpnexus.patches.v15_0.add_default_operations
+erpnexus.patches.v15_0.enable_old_serial_batch_fields
+erpnexus.patches.v15_0.update_warehouse_field_in_asset_repair_consumed_item_doctype
+erpnexus.patches.v15_0.update_asset_repair_field_in_stock_entry
+erpnexus.patches.v15_0.update_total_number_of_booked_depreciations
+erpnexus.patches.v15_0.do_not_use_batchwise_valuation
+erpnexus.patches.v15_0.update_invoice_remarks
+erpnexus.patches.v14_0.update_reports_with_range
+erpnexus.patches.v15_0.drop_index_posting_datetime_from_sle
+erpnexus.patches.v15_0.add_disassembly_order_stock_entry_type #1
+erpnexus.patches.v15_0.set_standard_stock_entry_type
+erpnexus.patches.v15_0.set_difference_amount_in_asset_value_adjustment
+erpnexus.patches.v15_0.link_purchase_item_to_asset_doc
+erpnexus.patches.v15_0.migrate_to_utm_analytics
+erpnexus.patches.v15_0.update_task_assignee_email_field_in_asset_maintenance_log
+erpnexus.patches.v14_0.update_currency_exchange_settings_for_frankfurter
