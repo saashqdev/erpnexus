@@ -1,5 +1,70 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 12C0 5.37258 5.37258 0 12 0H88C94.6274 0 100 5.37258 100 12V88C100 94.6274 94.6274 100 88 100H12C5.37258 100 0 94.6274 0 88V12Z" fill="#171717"/>
-<path d="M65.7097 32.9462H67.3871V24H33V32.9462H43.9032H65.7097Z" fill="white"/>
-<path d="M43.9032 66.2151V53.914H65.7097V44.9677H43.9032H33V75.1613H67.6667V66.2151H43.9032Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 100 100"
+   fill="none"
+   version="1.1"
+   id="svg59"
+   sodipodi:docname="erpnexus-favicon.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs63" />
+  <sodipodi:namedview
+     id="namedview61"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="6.99"
+     inkscape:cx="52.074392"
+     inkscape:cy="20.672389"
+     inkscape:window-width="1850"
+     inkscape:window-height="902"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg59" />
+  <path
+     d="M65.7097 32.9462H67.3871V24H33V32.9462H43.9032H65.7097Z"
+     fill="white"
+     id="path55" />
+  <path
+     d="M43.9032 66.2151V53.914H65.7097V44.9677H43.9032H33V75.1613H67.6667V66.2151H43.9032Z"
+     fill="white"
+     id="path57" />
+  <ellipse
+     style="fill:#5524b8;fill-opacity:1"
+     id="path347"
+     cx="50.032131"
+     cy="49.8181"
+     rx="49.714714"
+     ry="49.641506" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:48px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';fill:#5524b8;fill-opacity:1"
+     x="14.99496"
+     y="44.231319"
+     id="text1188"><tspan
+       sodipodi:role="line"
+       id="tspan1186"></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:48px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';fill:#5524b8;fill-opacity:1"
+     x="14.589529"
+     y="65.574448"
+     id="text1242"><tspan
+       sodipodi:role="line"
+       id="tspan1240"
+       x="14.589529"
+       y="65.574448"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:SansSerifBldFLF;-inkscape-font-specification:'SansSerifBldFLF Bold';fill:#ffffff;fill-opacity:1">HQ</tspan></text>
 </svg>
